@@ -17,7 +17,7 @@ a {
   --secondary-text-color: #e5e7eb;
   --background-color: #1f2937;
   --accent-color: #3882f6;
-  --page-width: 70%;
+  --page-width: 60%;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -29,6 +29,12 @@ body {
 .header {
   background-color: var(--background-color);
   color: var(--main-text-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+
   padding: 1em;
 }
 .navbar {
@@ -41,6 +47,9 @@ body {
   font-size: 16px;
   letter-spacing: 1px;
 }
+.navbar a {
+  color: var(--secondary-text-color);
+}
 .logo {
   margin-right: auto;
   font-weight: bold;
@@ -49,7 +58,60 @@ body {
 }
 .hero {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+  width: var(--page-width);
+  margin-bottom: 4em;
+  /* background-color: aqua; */
 }
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+  align-items: flex-start;
+  flex: 1 0 1;
+  flex-basis: 50%;
+  /* background-color: red; */
+  align-self: stretch;
+  padding-right: 2em;
+  line-height: 1.2em;
+}
+.hero-text h1 {
+  font-size: 38px;
+  line-height: 1em;
+}
+.hero-text p {
+  color: var(--secondary-text-color);
+}
+.hero-text button {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  font-weight: bold;
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 8px;
+}
+.hero-img {
+  flex: 0 0 1;
+
+  background-color: #e5e7eb59;
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* vertical-align: middle; */
+}
+/* .hero-img img {
+} */
+
+/* .hero section {
+  flex-grow: 1;
+} */
 
 footer {
   margin-top: auto;
