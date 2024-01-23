@@ -172,6 +172,37 @@ body {
   margin-top: 0.5em;
   text-align: right;
 }
+.call-sect {
+}
+.call-to-action {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  font-size: 18px;
+  width: var(--page-width);
+  margin: 5em auto;
+  padding: 2em 6em;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+.call-to-action h3 {
+  /* font-size: 18px; */
+}
+.call-to-action p {
+  font-size: 16px;
+}
+.call-to-action button {
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
+  border: 2px solid var(--main-text-color);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.3em 2.2em;
+  border-radius: 10px;
+  height: fit-content;
+}
 
 footer {
   margin-top: auto;
